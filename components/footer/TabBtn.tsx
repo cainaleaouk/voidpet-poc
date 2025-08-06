@@ -1,6 +1,6 @@
 import Colors from '@/constants/Colors';
 import React, { useEffect } from 'react';
-import { Image, ImageSourcePropType, TouchableOpacity, StyleSheet } from 'react-native';
+import { Image, ImageSourcePropType, Pressable, StyleSheet } from 'react-native';
 import Animated, {
   useSharedValue,
   useAnimatedStyle,
@@ -53,7 +53,7 @@ export function TabIcon({
 
   return (
     <Animated.View style={animatedContainer}>
-      <TouchableOpacity
+      <Pressable
         accessibilityRole="button"
         onPress={onPress}
         style={styles.btn}
@@ -79,7 +79,7 @@ export function TabIcon({
       >
         {name}
       </Animated.Text>
-    </TouchableOpacity>
+    </Pressable>
     </Animated.View>
   );
 }

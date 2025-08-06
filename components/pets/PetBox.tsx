@@ -1,6 +1,5 @@
-import { Dimensions, Image, StyleSheet } from 'react-native';
+import { Dimensions, Image, StyleSheet, Text, View  } from 'react-native';
 
-import { Text, View } from '@/components/Themed';
 import Colors from '@/constants/Colors';
 import PetIcon from '@/assets/images/petIcon.png';
 import PetTypeIcon from '@/assets/images/petTypeIcon.png';

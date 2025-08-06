@@ -1,9 +1,6 @@
-import { StyleSheet } from 'react-native';
+import { StyleSheet, Text, View } from 'react-native';
 
-import EditScreenInfo from '@/components/EditScreenInfo';
-import { Text, View } from '@/components/Themed';
-
-export default function TabTwoScreen() {
+export default function BagPage() {
   return (
     <View style={styles.container}>
       <Text style={styles.title}>BAG PAGE</Text>

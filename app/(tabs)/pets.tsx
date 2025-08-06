@@ -1,5 +1,4 @@
-import { FlatList, Image, SafeAreaView, StyleSheet, TouchableOpacity } from 'react-native';
-import { Text, View } from '@/components/Themed';
+import { FlatList, Image, SafeAreaView, StyleSheet, Text, View, Pressable } from 'react-native';
 import { PetBox } from '@/components/pets/PetBox';
 import Colors from '@/constants/Colors';
 import Missions from '@/assets/images/missions.png';
@@ -7,34 +6,35 @@ import { square } from '@/utils/style';
 
 const data = Array.from({ length: 43 }).map((_, i) => ({id: `joy${i}`}));
 
-export default function TabTwoScreen() {
+export default function PetsPage() {
 
-  const renderItem = ({ item }: any) => (
-    <PetBox />
-  );
+  // Pass the pet data down to the component for rendering; Since this is just a mock, ignore
+  const renderItem = (item: any) => {
+    return <PetBox />
+  }
   
   return (
     <SafeAreaView style={styles.container}>
       <View style={styles.header}>
         <View style={styles.headerText}>
           <Text style={styles.title}>VOIDPETS</Text>
-          <TouchableOpacity
+          <Pressable
             accessibilityRole="button"
             onPress={() => {}}
             style={styles.sortBtn}
             disabled
           >
             <Text style={styles.sortText}>sort by bp</Text>
-          </TouchableOpacity>
+          </Pressable>
         </View>
-        <TouchableOpacity
+        <Pressable
           accessibilityRole="button"
           onPress={() => {}}
           style={styles.btn}
           disabled
         >
           <Image source={Missions} style={{...square(60)}} resizeMode='contain' />
-        </TouchableOpacity>
+        </Pressable>
       </View>
       
       <FlatList

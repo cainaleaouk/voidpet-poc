@@ -1,9 +1,9 @@
-import { StyleSheet,  Text, View } from 'react-native';
+import { StyleSheet, Text, View } from 'react-native';
 
-export default function HomePage() {
+export default function ShopPage() {
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>HOME PAGE</Text>
+      <Text style={styles.title}>Shop Page</Text>
     </View>
   );
 }

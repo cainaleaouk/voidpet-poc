@@ -1,12 +1,9 @@
-import { StyleSheet } from 'react-native';
+import { StyleSheet, Text, View } from 'react-native';
 
-import EditScreenInfo from '@/components/EditScreenInfo';
-import { Text, View } from '@/components/Themed';
-
-export default function TabTwoScreen() {
+export default function HatchPage() {
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>HOME PAGE</Text>
+      <Text style={styles.title}>HATCH PAGE</Text>
     </View>
   );
 }
